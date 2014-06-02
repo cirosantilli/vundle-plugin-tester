@@ -7,4 +7,4 @@ filetype on
 filetype plugin on
 filetype indent on
 syntax on
-set autochdir
+silent! source vimrc_local

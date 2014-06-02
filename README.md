@@ -18,3 +18,5 @@ Where:
 Sample command to test the `plasticboy/markdown` plugin:
 
     ./test.sh plasticboy/markdown a.md
+
+The `vimrc` contains only options which are either required by Vundle, or by a large number of plugins. To add extra options required to test a specific plugin, create a `vimrc_local` file, and add the settings to it. It will be sourced after `vimrc`, and is already gitignored.
