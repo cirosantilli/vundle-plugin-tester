@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-if [ ! -z "$2" ]; then
-  filename="test/$2"
+if [ ! -z "$1" ]; then
+  filename="test/$1"
 else
   filename='a.txt'
 fi
-VIM_TEST_PLUGIN="$1" vim -u vimrc "$filename"
+vim -u vimrc "$filename"

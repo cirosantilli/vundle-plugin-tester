@@ -1,1 +1,2 @@
-vimrc_local
+after.vim
+plugins.vim

@@ -2,9 +2,9 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-Plugin $VIM_TEST_PLUGIN
+silent! source plugins.vim
 filetype on
 filetype plugin on
 filetype indent on
 syntax on
-silent! source vimrc_local
+silent! source after.vim
