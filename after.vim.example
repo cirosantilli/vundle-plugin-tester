@@ -1,1 +1,5 @@
 let a = 1
+
+" Good to debug syntax files.
+"set laststatus=2
+"set statusline=%{synIDattr(synID(line('.'),col('.'),1),'name')}
