@@ -15,7 +15,7 @@ Run:
     ./test.sh [<file-name>]
 
 Where `file-name` is the name of the file to open in the initial buffer.
-It will be put under the gitignored `test` directory. Default value: `a.txt`.
+It will be put under the gitignored `buffers` directory. Default value: `a.txt`.
 
 The `vimrc` contains only options which are either required by Vundle,
 or by a large number of plugins.
