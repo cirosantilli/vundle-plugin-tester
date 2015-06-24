@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
+
+buffers_dir="buffers"
+vimrc_path="$(pwd)/vimrc"
 if [ ! -z "$1" ]; then
-  filename="buffers/$1"
+  filename="$1"
 else
-  filename='a.txt'
+  filename="a.txt"
 fi
-vim -u vimrc "$filename"
+cd "$buffers_dir"
+vim -u "$vimrc_path" "$filename"
