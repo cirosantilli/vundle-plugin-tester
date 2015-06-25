@@ -1,11 +1,23 @@
 #!/usr/bin/env bash
 
+# Usage: ./test.sh [file.txt [vim|gvim]]
+
 buffers_dir="buffers"
 vimrc_path="$(pwd)/vimrc"
-if [ ! -z "$1" ]; then
+if [ $# -gt 0 ]; then
   filename="$1"
+  shift
+
+  # Mainly to allow gvim testing.
+  if [ $# -gt 0 ]; then
+    program="$1"
+    shift
+  else
+    program='vim'
+  fi
 else
-  filename="a.txt"
+  filename='a.txt'
 fi
+
 cd "$buffers_dir"
-vim -u "$vimrc_path" "$filename"
+"$program" -u "$vimrc_path" "$filename"
